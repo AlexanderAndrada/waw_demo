@@ -8,7 +8,7 @@ $toggleMenu.addEventListener("click", () => {
 
 const customConfiguration = {
     colors: {
-        mainColor: '#262B5B', // cambia el color del rectangulo del titulo
+        mainColor: '#D62B5B', // cambia el color del rectangulo del titulo
         secondColor: '#269FAC', // cambia el color del header y footer del del widget
         textColor: '#090305', // cambia el color del texto
         background: '#f4f4f4', // cambia el color del fondo
