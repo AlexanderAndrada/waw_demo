@@ -232,14 +232,14 @@ const createSettingsSection = () => {
 
     itemMask.append(groupMaskOpacity, groupMaskHeight);
 
-    // ----- ITEM: Lector de pantalla -----
+    // ----- ITEM: Texto a voz -----
     const itemScreenReader = document.createElement('div');
     itemScreenReader.className = 'setting__item';
 
     const titleReader = document.createElement('div');
     titleReader.className = 'setting__tittle';
     const h3Reader = document.createElement('h3');
-    h3Reader.textContent = 'Lector de Pantalla';
+    h3Reader.textContent = 'Texto a voz';
     titleReader.appendChild(h3Reader);
     itemScreenReader.appendChild(titleReader);
 
@@ -411,7 +411,7 @@ const createBody = () => {
         createOption('btn-big-cursor', '#cursor', 'Cursor Grande'),
         createOption('btn-reading-line', '#line', 'Guía de Lectura'),
         createOption('btn-reading-mask', '#mask', 'Máscara de Lectura'),
-        createOption('btn-voice-reading', '#voice', 'Lector de Pantalla'),
+        createOption('btn-voice-reading', '#voice', 'Texto a voz'),
         createOption('btn-hide-img', '#noimage', 'Ocultar Imágenes'),
         createOption('btn-highlight-links', '#links', 'Resaltar Enlaces'),
         createOption('btn-highlight-headers', '#headers', 'Resaltar Encabezados'),
