@@ -50,7 +50,7 @@ La accesibilidad web es fundamental para garantizar que todas las personas, inde
 
 ### 🔊 Accesibilidad Auditiva
 
-#### Lector de Pantalla
+#### Texto a voz
 - Lee en voz alta los elementos enfocados
 - Funciona con:
   - Navegación por teclado (Tab)
@@ -65,7 +65,7 @@ La accesibilidad web es fundamental para garantizar que todas las personas, inde
 #### Silenciador de Medios
 - Silencia automáticamente todos los elementos de audio y video
 - Indicador visual cuando está activo
-- Desactiva temporalmente el lector de pantalla
+- Desactiva temporalmente el texto a voz
 
 ### ♿ Características de Accesibilidad
 

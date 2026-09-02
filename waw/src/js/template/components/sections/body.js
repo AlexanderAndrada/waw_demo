@@ -62,7 +62,7 @@ export const createBody = () => {
         createOption('btn-big-cursor', '#cursor', 'Cursor Grande'),
         createOption('btn-reading-line', '#line', 'Guía de Lectura'),
         createOption('btn-reading-mask', '#mask', 'Máscara de Lectura'),
-        createOption('btn-voice-reading', '#voice', 'Lector de Pantalla'),
+        createOption('btn-voice-reading', '#voice', 'Texto a voz'),
         createOption('btn-hide-img', '#noimage', 'Ocultar Imágenes'),
         createOption('btn-highlight-links', '#links', 'Resaltar Enlaces'),
         createOption('btn-highlight-headers', '#headers', 'Resaltar Encabezados'),
