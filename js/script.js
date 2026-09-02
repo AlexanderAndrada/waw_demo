@@ -6,6 +6,8 @@ $toggleMenu.addEventListener("click", () => {
     $toggleMenu.classList.toggle("show")
 })
 
+// Para cambiar los colores del widget, se puede modificar el siguiente objeto
+
 const customConfiguration = {
     colors: {
         mainColor: '#D62B5B', // cambia el color del rectangulo del titulo
@@ -13,11 +15,6 @@ const customConfiguration = {
         textColor: '#090305', // cambia el color del texto
         background: '#f4f4f4', // cambia el color del fondo
         backgroundButton: '#f7f7f7', // cambia el color del fondo de los botones
-        mainColorDarkMode: '#b7234d', // cambia el color del rectangulo del titulo en modo oscuro
-        secondColorDarkMode: '#1c7680', // cambia el color del header y footer del del widget en modo oscuro
-        textColorDarkMode: '#e0e0e0', // cambia el color del texto en modo oscuro
-        backgroundDarkMode: '#2b2b2b', // cambia el color del fondo en modo oscuro
-        backgroundButtonDarkMode: '#333333' // cambia el color del fondo de los botones en modo oscuro
     }
 }
 
