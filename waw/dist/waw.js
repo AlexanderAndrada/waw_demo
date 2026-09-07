@@ -3738,7 +3738,7 @@ class VoiceReading{
 
         this.focusByKeyboard = false;
         this.elementToRead = null;
-        this.tag_list={ //lista de etiquetas comunes para la lectura de pantalla
+        this.tag_list={ //lista de etiquetas comunes para texto a voz
             p: "Párrafo",
             h1: "Título Nivel 1",
             h2: "Título Nivel 2",
@@ -3769,7 +3769,7 @@ class VoiceReading{
     toggle(){
         if(states.voice_reading) {
             this.deactivate();
-            this.readElement("lectura de pantalla desactivada");
+            this.readElement("texto a voz desactivada");
         }
         else this.activate();
     }
@@ -3781,7 +3781,7 @@ class VoiceReading{
         document.addEventListener('mousedown', this.#focusByMousedown);
         document.addEventListener('focusin', this.#handleFocusIn);
         this.$btn.classList.add('active');
-        this.readElement("lectura de pantalla activada");
+        this.readElement("texto a voz activada");
 
     }
 
@@ -4212,7 +4212,7 @@ class Mute{
         });
         if(states.voice_reading) {
             voiceReading.deactivate();
-            voiceReading.readElement("lectura de pantalla desactivada");
+            voiceReading.readElement("texto a voz desactivada");
         }
         this.$mute_indicator.classList.add("active");
         this.$btn.classList.add('active');
@@ -4710,7 +4710,7 @@ class WAW {
             else if (e.target.closest('[data-waw-function="reset"]')) this.resetFunctions();
             else if (e.target.closest('#reading-controls-mask')) readingMask.controls(e);
             else if (e.target.closest('#reading-controls-line')) readingLine.controls(e);
-            else if (e.target.closest('#test-voicereading')) voiceReading.readElement("Texto de prueba para la función de lectura de pantalla");
+            else if (e.target.closest('#test-voicereading')) voiceReading.readElement("Texto de prueba para la función de texto a voz");
             else if (this.widget_open && !this.$widget.contains(e.target)) this.toggleWidget(); // cierra el widget al hacer click fuera del mismo
 
             updateStatesToLocalStorage();
