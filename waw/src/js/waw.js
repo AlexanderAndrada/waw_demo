@@ -210,7 +210,7 @@ class WAW {
             else if (e.target.closest('[data-waw-function="reset"]')) this.resetFunctions();
             else if (e.target.closest('#reading-controls-mask')) readingMask.controls(e);
             else if (e.target.closest('#reading-controls-line')) readingLine.controls(e);
-            else if (e.target.closest('#test-voicereading')) voiceReading.readElement("Texto de prueba para la función de lectura de pantalla");
+            else if (e.target.closest('#test-voicereading')) voiceReading.readElement("Texto de prueba para la función de texto a voz");
             else if (this.widget_open && !this.$widget.contains(e.target)) this.toggleWidget() // cierra el widget al hacer click fuera del mismo
 
             updateStatesToLocalStorage();

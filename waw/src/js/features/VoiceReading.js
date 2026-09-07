@@ -10,7 +10,7 @@ class VoiceReading{
 
         this.focusByKeyboard = false;
         this.elementToRead = null;
-        this.tag_list={ //lista de etiquetas comunes para la lectura de pantalla
+        this.tag_list={ //lista de etiquetas comunes para texto a voz
             p: "Párrafo",
             h1: "Título Nivel 1",
             h2: "Título Nivel 2",
@@ -41,7 +41,7 @@ class VoiceReading{
     toggle(){
         if(states.voice_reading) {
             this.deactivate();
-            this.readElement("lectura de pantalla desactivada");
+            this.readElement("texto a voz desactivada");
         }
         else this.activate();
     }
@@ -53,7 +53,7 @@ class VoiceReading{
         document.addEventListener('mousedown', this.#focusByMousedown);
         document.addEventListener('focusin', this.#handleFocusIn);
         this.$btn.classList.add('active');
-        this.readElement("lectura de pantalla activada");
+        this.readElement("texto a voz activada");
 
     }
 

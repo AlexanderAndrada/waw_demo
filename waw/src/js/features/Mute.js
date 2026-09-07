@@ -20,7 +20,7 @@ class Mute{
         });
         if(states.voice_reading) {
             voiceReading.deactivate();
-            voiceReading.readElement("lectura de pantalla desactivada");
+            voiceReading.readElement("texto a voz desactivada");
         }
         this.$mute_indicator.classList.add("active")
         this.$btn.classList.add('active');
